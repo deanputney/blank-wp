@@ -115,12 +115,12 @@ body {
   font-family:Georgia, serif;
   font-size:14px;
   line-height:24px;
+  background:#fe5484;
 }
 
 #container {
   width:1000px;
   margin:0 auto;
-  background:#fff;
 }
 
 #header {
@@ -176,12 +176,15 @@ p {
 
 .post {
   width:600px;
-  padding:0 0 10px 0;
+  padding:5px 30px 10px 30px;
   margin:0 auto 50px auto;
+  border:1px solid #ECECEC;
   border-bottom: 1px solid #ECECEC;
-  -webkit-box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075);
-  box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1 );
+  -moz-box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1 );
+  box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1 );
+  background:#ffffff;
+  border-radius:4px;
 }
 
 .post .content a {
@@ -194,7 +197,8 @@ p {
 }
 
 .post .content a:hover, .post .meta a:hover {
-  color:#c00;
+/*  color:#c00;*/
+  color:rgba(0,0,0,.6);
 }
 
 .head {
@@ -248,8 +252,35 @@ p {
 
 .post .imgwrapper.aligncenter {
   width:1000px;
-  margin:0 0 20px -200px;
+  margin:0 0 20px -220px;
+  padding:20px;
+  background:#fff;
   text-align:center;
+  border:1px solid #ECECEC;
+  -webkit-box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1 );
+  -moz-box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1 );
+  box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1 );
+  border-radius:4px;
+}
+
+.imgwrapper.aligncenter:before {
+  height: 25px;
+  width: 660px;
+  display: block;
+  content: "";
+  background: white;
+  margin-top: -20px;
+  margin: -26px 169px 0;
+}
+
+.imgwrapper.aligncenter:after {
+  height: 25px;
+  width: 660px;
+  display: block;
+  content: "";
+  background: white;
+  margin-top: -20px;
+  margin: 0px 169px -26px;
 }
 
 .post .imgwrapper.aligncenter img {
@@ -258,9 +289,9 @@ p {
 }
 
 .post img {
-  -moz-box-shadow:0px 3px 7px #ccc;
+/*  -moz-box-shadow:0px 3px 7px #ccc;
   -webkit-box-shadow:0px 3px 7px #ccc;
-  box-shadow:0px 3px 7px #ccc;
+  box-shadow:0px 3px 7px #ccc;*/
   -webkit-transition:all 0.2s ease-in-out;
   -moz-transition:all 0.2s ease-in-out;
   -o-transition:all 0.2s ease-in-out;
@@ -268,9 +299,10 @@ p {
 }
 
 .post img:hover {
-  -moz-box-shadow:0px 3px 7px #999;
+  opacity:.95;
+/*  -moz-box-shadow:0px 3px 7px #999;
   -webkit-box-shadow:0px 3px 7px #999;
-  box-shadow:0px 3px 7px #999;
+  box-shadow:0px 3px 7px #999;*/
 }
 
 .aligncenter {
