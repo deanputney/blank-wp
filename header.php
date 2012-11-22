@@ -9,10 +9,9 @@
 <body>
 
   <div id="header">
-    <a href="<?php bloginfo('home'); ?>">Dean</a>
-    <div id="sub-header">
-        
+    <div class="circle" style="display:inline-block; border:5px solid #0099E5; width:150px; height:150px; border-radius:80px; margin-bottom:0px; background:-37px 6 url('http://deanputney.com/img/dean_head_rotate2_500.gif'); background-size:150%;">
     </div>
+    <br/>
   </div>
   
   <div id="container">
