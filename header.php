@@ -21,6 +21,6 @@
         <hr>
         Twitter - Homepage
       </div>
-      <div class="circle"></div>
+      <a href="<?php bloginfo('home'); ?>"><div class="circle"></div></a>
       <br/>
     </div>
