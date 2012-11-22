@@ -337,6 +337,10 @@ p {
     margin:0 auto 50px;
   }
   
+  .post {
+    padding:5px 0 10px;
+  }
+  
   .post .imgwrapper.aligncenter {
     width:600px;
     margin:0;
