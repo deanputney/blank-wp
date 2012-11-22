@@ -8,10 +8,19 @@
 
 <body>
 
-  <div id="header">
-    <div class="circle" style="display:inline-block; border:5px solid #0099E5; width:150px; height:150px; border-radius:80px; margin-bottom:0px; background:-37px 6 url('http://deanputney.com/img/dean_head_rotate2_500.gif'); background-size:150%;">
-    </div>
-    <br/>
-  </div>
-  
   <div id="container">
+    <div id="header">
+      <div class="alpha" style="width:40%; padding-right:20px; padding-top:60px; float:left; text-align:left">
+        Dean Putney
+        <hr>
+        Everyone's favorite Manic Pixie Dream Coder
+      </div>
+      
+      <div class="beta" style="width:40%; padding-left:20px; padding-top:60px; float:right; text-align:right">
+        San Francisco
+        <hr>
+        Twitter - Homepage
+      </div>
+      <div class="circle"></div>
+      <br/>
+    </div>
