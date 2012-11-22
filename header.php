@@ -19,7 +19,7 @@
       <div class="beta" style="width:40%; padding-left:20px; padding-top:60px; float:right; text-align:right">
         San Francisco
         <hr>
-        Twitter - Homepage
+        <a href="http://twitter.com/deanputney">Follow me on Twitter, dickwad</a>
       </div>
       <a href="<?php bloginfo('home'); ?>"><div class="circle"></div></a>
       <br/>
