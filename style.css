@@ -352,6 +352,7 @@ p {
   
   .post .overhang {
     width:600px !important;
+    margin:0 0 30px;
   }
   
   .post img {
