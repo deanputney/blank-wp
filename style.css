@@ -270,7 +270,7 @@ p {
   height:auto;
 }
 
-.post .overhang p {
+.post .overhang .wp-caption-text {
   float: right;
 }
 
@@ -352,7 +352,10 @@ p {
   
   .post .overhang {
     width:600px !important;
-    margin:0 0 30px;
+  }
+  
+  .post .overhang .wp-caption-text {
+    float:none;
   }
   
   .post img {
