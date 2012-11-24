@@ -271,7 +271,8 @@ p {
 }
 
 .post .overhang .wp-caption-text {
-  float: right;
+  float:right;
+  text-align:right;
 }
 
 .post img {
