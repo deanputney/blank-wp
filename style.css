@@ -350,7 +350,7 @@ p {
     padding:5px 0 10px;
   }
   
-  .post .overhang.aligncenter {
+  .post .overhang {
     width:600px;
     margin:0;
     text-align:center;
@@ -380,7 +380,7 @@ p {
     width:320px;
   }
   
-  .post .overhang.aligncenter {
+  .post .overhang {
     width:320px;
     margin:0;
     text-align:center;
