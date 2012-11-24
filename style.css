@@ -351,9 +351,7 @@ p {
   }
   
   .post .overhang {
-    width:600px;
-    margin:0;
-    text-align:center;
+    width:600px !important;
   }
   
   .post img {
