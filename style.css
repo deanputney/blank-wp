@@ -351,12 +351,13 @@ p {
     padding:5px 0 10px;
   }
   
-  .post .overhang {
+  .post .overhang, .post .wp-caption {
     width:600px !important;
   }
   
   .post .overhang .wp-caption-text {
     float:none;
+    text-align:right;
   }
   
   .post img {
