@@ -48,6 +48,7 @@ function manageDesktopAds(){
 
 function wrapWideImages(){
   $('.post .content .wp-caption').each(function(){
+    console.log('wp-caption');
     var img = $(this, 'img').first(); // Get my img elem
     var pic_real_width, pic_real_height;
     $("<img/>") // Make in memory copy of image to avoid css issues
