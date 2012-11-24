@@ -29,7 +29,12 @@
     <meta property="og:image" content="<?php echo $first_img; ?>" />
   <?php endif; ?>
 
-  <?php wp_head(); //plugins break if not left in ?>
+<?php else: ?>
+  
+<?php endif; ?>
+
+<?php wp_head(); //plugins break if not left in ?>
+
 </head>
 
 <body>
