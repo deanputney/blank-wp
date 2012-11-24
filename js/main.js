@@ -47,20 +47,33 @@ function manageDesktopAds(){
 }
 
 function wrapWideImages(){
-  $('.post .content img.aligncenter').each(wrapWideImage);
-}
-
-function wrapWideImage(){
-  var img = $(this); // Get my img elem
-  var pic_real_width, pic_real_height;
-  $("<img/>") // Make in memory copy of image to avoid css issues
-      .attr("src", img.attr('src'))
-      .load(function() {
-          pic_real_width = this.width;   // Note: $(this).width() will not
-          pic_real_height = this.height; // work for in memory images.
-          console.log(pic_real_width);
-          if(pic_real_width > $('#container').width() && !img.parents('div').hasClass('imgwrapper')){
-            img.wrap('<div class="imgwrapper aligncenter" />');
-          }
-      });
+  $('.post .content img').each(function(){
+    var img = $(this); // Get my img elem
+    var pic_real_width, pic_real_height;
+    $("<img/>") // Make in memory copy of image to avoid css issues
+        .attr("src", img.attr('src'))
+        .load(function() {
+            pic_real_width = this.width;   // Note: $(this).width() will not
+            pic_real_height = this.height; // work for in memory images.
+            console.log(pic_real_width);
+            if(pic_real_width > $('#container').width() && !img.parents('div').hasClass('imgwrapper')){
+              img.wrap('<div class="imgwrapper aligncenter" />');
+            }
+        });
+  });
+  
+  $('.post .content .wp-caption').each(function(){
+    var img = $(this, 'img').first(); // Get my img elem
+    var pic_real_width, pic_real_height;
+    $("<img/>") // Make in memory copy of image to avoid css issues
+        .attr("src", img.attr('src'))
+        .load(function() {
+            pic_real_width = this.width;   // Note: $(this).width() will not
+            pic_real_height = this.height; // work for in memory images.
+            console.log(pic_real_width);
+            if(pic_real_width > $('#container').width() && !img.parents('div').hasClass('imgwrapper')){
+              $(this).addClass('imgwrapper');
+            }
+        });
+  });
 }
