@@ -288,6 +288,10 @@ p {
   box-shadow:0px 3px 7px rgba( 0, 0, 0, 0.2 );
 }
 
+.post .wp-caption-text {
+  
+}
+
 .aligncenter {
   margin:0 auto;
   display:block;
