@@ -153,8 +153,9 @@ hr {
   height:150px; 
   border-radius:80px; 
   margin:0 auto; 
-  background:-37px 6 url('http://deanputney.com/img/dean_head_rotate2_500.gif'); 
+  background:url('http://deanputney.com/img/dean_head_rotate2_500.gif'); 
   background-size:150%;
+  background-position:-37px 6px;
 }
 
 #ad_leaderboard {
@@ -257,16 +258,20 @@ p {
   margin-left:7px;
 }
 
-.post .imgwrapper {
-  width:1000px;
-  margin:0 0 20px -200px;
+.post .overhang {
+  width:1000px !important;
+  margin:0 0 30px -200px;
   background:#fff;
-  text-align:center;
+  text-align:right;
 }
 
-.post .imgwrapper.aligncenter img {
+.post .overhang img {
   width:1000px !important;
   height:auto;
+}
+
+.post .overhang p {
+  float: right;
 }
 
 .post img {
@@ -345,7 +350,7 @@ p {
     padding:5px 0 10px;
   }
   
-  .post .imgwrapper.aligncenter {
+  .post .overhang.aligncenter {
     width:600px;
     margin:0;
     text-align:center;
@@ -375,7 +380,7 @@ p {
     width:320px;
   }
   
-  .post .imgwrapper.aligncenter {
+  .post .overhang.aligncenter {
     width:320px;
     margin:0;
     text-align:center;

@@ -49,7 +49,7 @@ function manageDesktopAds(){
 function wrapWideImages(){
   $('.post .content .wp-caption').each(function(){
     console.log('wp-caption');
-    var img = $(this, 'img').first(); // Get my img elem
+    var img = $('img', this).first(); // Get my img elem
     var pic_real_width, pic_real_height;
     $("<img/>") // Make in memory copy of image to avoid css issues
         .attr("src", img.attr('src'))
@@ -57,13 +57,13 @@ function wrapWideImages(){
             pic_real_width = this.width;   // Note: $(this).width() will not
             pic_real_height = this.height; // work for in memory images.
             console.log(pic_real_width);
-            if(pic_real_width > $('#container').width() && !img.parents('div').hasClass('imgwrapper')){
-              $(this).addClass('imgwrapper');
+            if(pic_real_width > $('#container').width() && !img.parents('div').hasClass('overhang')){
+              img.parents('.wp-caption').addClass('overhang');
             }
         });
   });
   
-  $('.post .content img').each(function(){
+  $('.post .content img').not($('.wp-caption img')).each(function(){
     var img = $(this); // Get my img elem
     var pic_real_width, pic_real_height;
     $("<img/>") // Make in memory copy of image to avoid css issues
@@ -72,8 +72,8 @@ function wrapWideImages(){
             pic_real_width = this.width;   // Note: $(this).width() will not
             pic_real_height = this.height; // work for in memory images.
             console.log(pic_real_width);
-            if(pic_real_width > $('#container').width() && !img.parents('div').hasClass('imgwrapper')){
-              img.wrap('<div class="imgwrapper aligncenter" />');
+            if(pic_real_width > $('#container').width() && !img.parents('div').hasClass('overhang')){
+              img.wrap('<div class="overhang aligncenter" />');
             }
         });
   });
