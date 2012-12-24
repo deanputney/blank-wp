@@ -48,6 +48,11 @@
 
   <div id="container">
     <div id="header">
+      <div class="mobile">
+        <a href="http://deanputney.com">Dean Putney</a>
+        <hr>
+        <a href="http://twitter.com/deanputney">Follow me on Twitter</a>
+      </div>
       <div class="alpha" style="width:40%; padding-right:20px; padding-top:60px; float:left; text-align:left">
         <a href="http://deanputney.com">Dean Putney</a>
         <hr>
