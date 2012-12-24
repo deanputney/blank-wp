@@ -276,6 +276,7 @@ p {
 }
 
 .post img {
+  opacity:0; /* Images fade in with Javascript on load */
   -webkit-box-shadow: 0 3px 7px rgba( 0, 0, 0, 0.1 );
   -moz-box-shadow: 0 3px 7px rgba( 0, 0, 0, 0.1 );
   box-shadow: 0 3px 7px rgba( 0, 0, 0, 0.1 );

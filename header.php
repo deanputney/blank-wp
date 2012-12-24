@@ -6,6 +6,13 @@
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=10" />
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"> </script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/main.js?v=4"> </script>
+  <noscript>
+    <style type="text/css">
+      .post img {
+        opacity:1;;
+      }
+    </style>
+  </noscript>
 
 	<meta property="og:site_name" content="Dean's Notes" />
 	<meta property="fb:admins" content="1219680052" />

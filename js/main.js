@@ -12,6 +12,9 @@ $(document).ready(function(){
   })(navigator.userAgent||navigator.vendor||window.opera);
   
   console.log('Managing images');
+  $('.post img').load(function(){
+    $(this).animate({opacity:1});
+  });
   wrapWideImages();
 });
 
