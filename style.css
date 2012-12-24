@@ -372,6 +372,7 @@ p {
 @media screen and (max-width:650px) {
   #container {
     width:320px;
+    padding:0 3px;
   }
   
   #header {
@@ -386,7 +387,7 @@ p {
   }
   
   .post .overhang {
-    width:320px;
+    width:320px !important;
     margin:0;
     text-align:center;
   }
