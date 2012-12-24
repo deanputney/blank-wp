@@ -388,7 +388,7 @@ p {
   }
   
   .wp-caption, .wp-caption-text, p.wp-caption-text {
-    font-size:10px;
+    font-size:12px !important;
   }
   
   .post .overhang {
