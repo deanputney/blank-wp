@@ -372,7 +372,8 @@ p {
 @media screen and (max-width:650px) {
   #container {
     width:320px;
-    padding:0 3px;
+    padding:0 5px;
+    overflow-x:hidden;
   }
   
   #header {
@@ -382,8 +383,8 @@ p {
     background-size:auto;
   }
   
-  .post {
-    width:320px;
+  .post, .wp-caption {
+    width:320px !important;
   }
   
   .post .overhang {
