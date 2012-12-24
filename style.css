@@ -371,7 +371,6 @@ p {
 
 @media screen and (max-width:650px) {
   #container {
-    border: 1px solid #eee;
     width:310px;
     padding:0 5px;
     overflow-x:hidden;
