@@ -387,7 +387,7 @@ p {
     width:310px !important;
   }
   
-  .wp-caption {
+  .wp-caption, .wp-caption-text {
     font-size:10px;
   }
   
