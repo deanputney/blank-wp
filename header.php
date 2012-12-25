@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title><?php global $page, $paged;	wp_title( '-', true, 'right' );	echo "Dean's Notes";	?></title><meta charset="utf-8">
+	<title><?php global $page, $paged;	wp_title( '-', true, 'right' );	echo "Dean's Notes";	?></title>
+  <meta charset="utf-8">
+  <link rel="alternate" type="application/rss+xml"  href="<?php bloginfo('siteurl') ?>/feed" title="Dean's Notes RSS Feed">
 	<meta name="viewport" content="width=device-width; initial-scale=1; user-scalable=1;" />
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=21" />
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"> </script>
