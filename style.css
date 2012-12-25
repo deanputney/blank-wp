@@ -158,6 +158,10 @@ hr {
   background-position:-37px 6px;
 }
 
+#header .mobile {
+  display:none;
+}
+
 #ad_leaderboard {
   width:100%;
   border:1px solid #ccc;
