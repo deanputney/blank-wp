@@ -123,6 +123,14 @@ hr {
   border-bottom: 2px solid #333;
 }
 
+b, strong {
+  font-weight:bold;
+}
+
+i {
+  text-decoration:italic;
+}
+
 #container {
   width:1000px;
   margin:0 auto;
@@ -191,6 +199,14 @@ p {
   margin-bottom:12px;
 }
 
+pre {
+  margin-left:35px;
+  margin-bottom:12px;
+}
+
+code {
+  font-family:monospace !important;
+}
 
 .post {
   width:600px;
@@ -244,6 +260,7 @@ p {
   -webkit-box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075);
   box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075);
+  clear:both;
 }
 
 .byline {

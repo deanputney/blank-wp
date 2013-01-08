@@ -8,8 +8,9 @@
   <div class="meta">
     <div class="actions">
       <span class="share">
-        <a href="" class="tweet">Tweet</a>
-        <a href="" class="facebook">Share</a>
+        Share: 
+        <a href="http://twitter.com/share?url=<?php the_permalink(); ?>" class="tweet">Tweet</a>
+        <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" class="facebook">Facebook</a>
       </span>
       <span class="comments"><a href="<?php the_permalink(); ?>">Comments</a></span>
     </div>
