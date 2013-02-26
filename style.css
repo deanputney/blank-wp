@@ -315,6 +315,19 @@ code {
   box-shadow:0px 3px 7px rgba( 0, 0, 0, 0.2 );
 }
 
+.post img.alignleft, .post img.alignright {
+  width:auto;
+  height:auto;
+}
+
+.post img.alignleft {
+  margin: 0 20px 20px 0;
+}
+
+.post img.alignright {
+  margin: 0 0 20px 20px;
+}
+
 .post .wp-caption-text {
   
 }

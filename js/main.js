@@ -79,7 +79,7 @@ function wrapWideImages(){
             pic_real_width = this.width;   // Note: $(this).width() will not
             pic_real_height = this.height; // work for in memory images.
             console.log(pic_real_width);
-            if(pic_real_width > $('#container').width() && !img.parents('div').hasClass('overhang')){
+            if(pic_real_width >= $('#container').width() && !img.parents('div').hasClass('overhang')){
               img.wrap('<div class="overhang aligncenter" />');
             }
         });
