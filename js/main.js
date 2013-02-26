@@ -18,9 +18,6 @@ $(document).ready(function(){
     manageDesktopAds();
     
     console.log('Managing images');
-    $('.post img').load(function(){
-      $(this).animate({opacity:1});
-    });
     wrapWideImages();
   }
 });
