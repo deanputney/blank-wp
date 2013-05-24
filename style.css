@@ -209,8 +209,8 @@ code {
 }
 
 .post {
-  width:600px;
-  padding:5px 30px 10px 30px;
+  width:1000px;
+  padding:5px 0px 10px 0px;
   margin:0 auto 50px auto;
 /*  border:1px solid #ECECEC;
   border-bottom: 1px solid #ECECEC;
@@ -230,12 +230,22 @@ code {
 }
 
 .post .content a:hover, .post .meta a:hover {
-/*  color:#c00;*/
   color:rgba(0,0,0,.6);
 }
 
+.post .content p, 
+.post .content pre, 
+.post .content code,
+.title,
+.meta,
 .head {
-  margin:20px 0 15px 0;
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.head {
+  margin:20px auto 15px auto;
 }
 
 .title {
@@ -287,7 +297,6 @@ code {
 }
 
 .post .overhang img {
-  width:1000px !important;
   height:auto;
 }
 
@@ -296,7 +305,7 @@ code {
   text-align:right;
 }
 
-.post img {
+.post img, .post p img {
   -webkit-box-shadow: 0 3px 7px rgba( 0, 0, 0, 0.1 );
   -moz-box-shadow: 0 3px 7px rgba( 0, 0, 0, 0.1 );
   box-shadow: 0 3px 7px rgba( 0, 0, 0, 0.1 );
@@ -304,8 +313,9 @@ code {
   -moz-transition:all 0.2s ease-in-out;
   -o-transition:all 0.2s ease-in-out;
   transition:all 0.2s ease-in-out;
-  width:100%;
+  max-width:1000px;
   height:auto;
+	position:relative;
 }
 
 .post img:hover {
@@ -382,6 +392,7 @@ code {
   }
   
   .post {
+		width:600px;
     padding:5px 0 10px;
   }
   
@@ -404,13 +415,13 @@ code {
 
 @media screen and (max-width:650px) {
   #container {
-    width:310px;
+    width:95%;
     padding:0 5px;
     overflow-x:hidden;
   }
   
   #header {
-    width:310px;
+    width:95%;
     padding:20px 0;
     margin:0 auto 50px;
     background-size:auto;
@@ -422,7 +433,7 @@ code {
   
   #header .mobile {
     display:block;
-    width:180px;
+    width:60%;
     text-align:left !important;
     float:left;
     margin:20px 0 0 0;
@@ -439,7 +450,7 @@ code {
   }
   
   .post, .wp-caption {
-    width:310px !important;
+    width:95% !important;
   }
   
   .wp-caption, .wp-caption-text, p.wp-caption-text {
@@ -447,13 +458,13 @@ code {
   }
   
   .post .overhang {
-    width:310px !important;
+    width:100% !important;
     margin:0;
     text-align:center;
   }
   
   .post img {
-    max-width:310px !important;
+    max-width:100% !important;
     height:auto;
   }
   
@@ -465,6 +476,15 @@ code {
     color:#000;
     margin:0 0 2px 0;
   }
+	
+	.post .content p, 
+	.post .content pre, 
+	.post .content code,
+	.title,
+	.meta,
+	.head {
+		width:100%;
+	}
 }
 
 
