@@ -236,6 +236,8 @@ code {
 .post .content p, 
 .post .content pre, 
 .post .content code,
+.post .content ul,
+.post .content ol,
 .title,
 .meta,
 .head {
@@ -293,11 +295,12 @@ code {
   width:1000px !important;
   margin:0 0 30px -200px;
   background:#fff;
-  text-align:right;
+	text-align:center;
 }
 
 .post .overhang img {
   height:auto;
+	text-align:center;
 }
 
 .post .overhang .wp-caption-text {
@@ -382,39 +385,6 @@ code {
 
 @media screen and (max-width:1000px) {
   #container {
-    width:600px;
-  }
-  
-  #header {
-    width:600px;
-    padding:50px 0 0px;
-    margin:0 auto 20px;
-  }
-  
-  .post {
-		width:600px;
-    padding:5px 0 10px;
-  }
-  
-  .post .overhang, .post .wp-caption {
-    width:600px !important;
-  }
-  
-  .post .overhang .wp-caption-text {
-    float:none;
-    text-align:right;
-  }
-  
-  .post img {
-    max-width:600px !important;
-    height:auto;
-  }
-}
-
-
-
-@media screen and (max-width:650px) {
-  #container {
     width:95%;
     padding:0 5px;
     overflow-x:hidden;
@@ -426,29 +396,7 @@ code {
     margin:0 auto 50px;
     background-size:auto;
   }
-  
-  #header .alpha, #header .beta {
-    display:none;
-  }
-  
-  #header .mobile {
-    display:block;
-    width:60%;
-    text-align:left !important;
-    float:left;
-    margin:20px 0 0 0;
-  }
-  
-  #header .circle {
-    float:right;
-    width:100px; 
-    height:100px; 
-    margin:0 auto; 
-    background:url('http://deanputney.com/img/dean_head_rotate2_500.gif'); 
-    background-size:150%;
-    background-position:-25px 0px;
-  }
-  
+	
   .post, .wp-caption {
     width:95% !important;
   }
@@ -485,6 +433,32 @@ code {
 	.head {
 		width:100%;
 	}
+}
+
+
+
+@media screen and (max-width:650px) {
+  #header .alpha, #header .beta {
+    display:none;
+  }
+  
+  #header .mobile {
+    display:block;
+    width:60%;
+    text-align:left !important;
+    float:left;
+    margin:20px 0 0 0;
+  }
+  
+  #header .circle {
+    float:right;
+    width:100px; 
+    height:100px; 
+    margin:0 auto; 
+    background:url('http://deanputney.com/img/dean_head_rotate2_500.gif'); 
+    background-size:150%;
+    background-position:-25px 0px;
+  }
 }
 
 
