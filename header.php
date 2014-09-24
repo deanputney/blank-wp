@@ -6,7 +6,7 @@
   <link rel="alternate" type="application/rss+xml"  href="<?php bloginfo('siteurl') ?>/feed" title="Dean's Notes RSS Feed">
 	<meta name="viewport" content="width=device-width; initial-scale=1; user-scalable=1;" />
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=23" />
-  <link rel="stylesheet" type="text/css" media="all" href="?php echo get_template_directory_uri(); ?>/image-align.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/image-align.css" />
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"> </script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/main.js?v=8"> </script>
   <noscript>
