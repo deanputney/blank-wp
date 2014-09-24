@@ -1,7 +1,5 @@
 <div class="post">
-  <div class="head">
-    <div class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-  </div>
+  <h1 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
   <div class="content">
     <?php the_content();?>
   </div><!-- end .post .content -->

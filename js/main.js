@@ -17,8 +17,6 @@ $(document).ready(function(){
     console.log('Desktop detected.');
     manageDesktopAds();
     
-    console.log('Managing images');
-    centerImages();
   }
 });
 
@@ -50,10 +48,4 @@ function manageDesktopAds(){
     $('#ad_leaderboard').html($('#ad_leaderboard_noscript').text());
   }
   else{ console.log('Leaderboard adblock not present or noscript empty'); }
-}
-
-function centerImages(){
-  $('.post .content p img').not('.alignleft, .alignright').each(function(){
-    $(this).parents('p').addClass('overhang');
-  });
 }
